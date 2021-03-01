@@ -2,6 +2,11 @@ body{
     background-color: rgb(169, 173, 169);
 }
 
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
 nav{
     background-color: white;
     width: 68.5%;
@@ -19,7 +24,7 @@ nav ul{
 }
 
 nav li{
-    display: inline;
+    display: inline-flex;
     float: left;
 }
 
@@ -59,7 +64,7 @@ header{
 .main{
     background-color: rgb(139, 143, 139);
 
-    display: inline-block;
+    display: flexbox;
     height: auto;
     min-height: 50px;
 
@@ -69,7 +74,8 @@ header{
 }
 
 .content{
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
     height: auto;
 
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -100,6 +106,8 @@ aside, article{
 }
 
 footer{
+    display: flexbox;
+
     background-color: #252525;
     color: white;
 
